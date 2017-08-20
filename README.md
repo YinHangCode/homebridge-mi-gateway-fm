@@ -1,7 +1,7 @@
 # homebridge-mi-gateway-fm
 [![npm version](https://badge.fury.io/js/homebridge-mi-gateway-fm.svg)](https://badge.fury.io/js/homebridge-mi-gateway-fm)
 
-XiaoMi Gateway FM plugin for HomeBridge.
+XiaoMi Gateway FM plugin for HomeBridge.   
 Thanks for [nfarina](https://github.com/nfarina)(the author of [homebridge](https://github.com/nfarina/homebridge)), [wfr](https://github.com/wfr)(the author of [mihome-binary-protocol](https://github.com/OpenMiHome/mihome-binary-protocol)), [aholstenson](https://github.com/aholstenson)(the author of [miio](https://github.com/aholstenson/miio)), all other developer and testers.   
 
 ## Installation
@@ -15,17 +15,26 @@ npm install -g miio homebridge-mi-gateway-fm
 
 ## Configuration
 ```
-    "accessories": [
-        {
-			"accessory": "MiGatewayFM",
-			"name": "MiGatewayFM",
-			"ip": "192.168.88.xx",
-			"token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-        }
-     ]
+"accessories": [
+    {
+        "accessory": "MiGatewayFM",
+        "name": "MiGatewayFM",
+        "ip": "192.168.88.xx",
+        "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }
+]
 ```
-
-	 
+If you want play your own channel, you can set the following in the config.   
+"accessories": [
+    {
+        "accessory": "MiGatewayFM",
+        "name": "MiGatewayFM",
+        "ip": "192.168.88.xx",
+        "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "url": "http://live.xmcdn.com/live/1005/64.m3u8"
+    }
+]
+     
 ## Version Logs
 ### 0.0.1
 1.Switch on/off XiaoMi Gateway FM.   
