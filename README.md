@@ -43,7 +43,7 @@ miio --discover
 ```
 Wait until you get output similar to this:
 ```
-Device ID: 56795562   
+Device ID: xxxxxxxx   
 Model info: Unknown   
 Address: 192.168.88.xx   
 Token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx via auto-token   
