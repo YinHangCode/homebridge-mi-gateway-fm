@@ -12,7 +12,7 @@ If you are using Raspberry Pi, please read [Running-HomeBridge-on-a-Raspberry-Pi
 2. Make sure you can see HomeBridge in your iOS devices, if not, please go back to step 1.   
 3. Install packages.   
 ```
-npm install -g homebridge-mi-gateway-fm
+npm install -g miio homebridge-mi-gateway-fm
 ```
 
 ## Configuration
@@ -53,6 +53,8 @@ Support: Unknown
 ```
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx is token.
 ## Version Logs
+### 0.0.3
+1.optimized code.   
 ### 0.0.2
 1.optimized code.   
 ### 0.0.1

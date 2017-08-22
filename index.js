@@ -1,4 +1,4 @@
-var miioDevice = require('./miio/device');
+const miio = require('miio');
 var Accessory, Service, Characteristic, UUIDGen;
 
 module.exports = function(homebridge) {
@@ -19,7 +19,7 @@ function MiGatewayFM(log, config) {
     this.config = config;
 
     var that = this;
-    this.device = new miioDevice({
+    this.device = new miio.Device({
         address: that.config.ip,
         token: that.config.token
     });
