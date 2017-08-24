@@ -4,7 +4,8 @@
 XiaoMi Gateway FM plugin for HomeBridge.   
 Thanks for [nfarina](https://github.com/nfarina)(the author of [homebridge](https://github.com/nfarina/homebridge)), [wfr](https://github.com/wfr)(the author of [mihome-binary-protocol](https://github.com/OpenMiHome/mihome-binary-protocol)), [aholstenson](https://github.com/aholstenson)(the author of [miio](https://github.com/aholstenson/miio)), all other developer and testers.   
 
-![](https://github.com/YinHangCode/homebridge-mi-gateway-fm/blob/master/images/Gateway.jpg)
+![](https://raw.githubusercontent.com/YinHangCode/homebridge-mi-gateway-fm/master/images/Gateway.jpg)
+![](https://raw.githubusercontent.com/YinHangCode/homebridge-mi-gateway-fm/master/images/mi-acpartner.jpg)
 
 ## Installation
 1. Install HomeBridge, please follow it's [README](https://github.com/nfarina/homebridge/blob/master/README.md).   
@@ -53,6 +54,8 @@ Support: Unknown
 ```
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx is token.
 ## Version Logs
+### 0.1.0
+1.add support for mi ac partner FM.
 ### 0.0.3
 1.optimized code.   
 ### 0.0.2
