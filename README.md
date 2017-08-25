@@ -54,8 +54,10 @@ Support: Unknown
 ```
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx is token.
 ## Version Logs
+### 0.1.1
+1.1.optimized code.   
 ### 0.1.0
-1.add support for mi ac partner FM.
+1.add support for mi ac partner FM.   
 ### 0.0.3
 1.optimized code.   
 ### 0.0.2
