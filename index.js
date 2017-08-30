@@ -80,11 +80,11 @@ MiGatewayFM.prototype = {
     getFMStatus: function(callback) {
         var that = this;
         this.device.call("get_prop_fm", [null]).then(result => {
-			callback(null, result['current_status'] === 'pause' ? 0 : 1);
-		}).catch(function(err) {
-			that.log.error("[MiGatewayFM][ERROR]getFMStatus Error: " + err);
-			callback(true);
-		});
+            callback(null, result['current_status'] === 'pause' ? 0 : 1);
+        }).catch(function(err) {
+            that.log.error("[MiGatewayFM][ERROR]getFMStatus Error: " + err);
+            callback(true);
+        });
 
     },
 
