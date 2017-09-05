@@ -88,7 +88,7 @@ MiGatewayFM.prototype = {
     },
 
     setFMStatus: function(value, callback) {
-		var that = this;
+        var that = this;
         if(value) {
             if(this.config['url']) {
                 this.device.call("play_specify_fm", {"type": 0, "id": 0, "url": this.config['url']}).then(result => {
