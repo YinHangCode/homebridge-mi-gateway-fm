@@ -22,26 +22,22 @@ npm install -g miio homebridge-mi-gateway-fm
 
 ## Configuration
 ```
-"accessories": [
-    {
-        "accessory": "MiGatewayFM",
-        "name": "MiGatewayFM",
-        "ip": "192.168.88.xx",
-        "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    }
-]
+"accessories": [{
+    "accessory": "MiGatewayFM",
+    "name": "MiGatewayFM",
+    "ip": "192.168.88.xx",
+    "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}]
 ```
 If you want play your own channel, you can set the following in the config.   
 ```
-"accessories": [
-    {
-        "accessory": "MiGatewayFM",
-        "name": "MiGatewayFM",
-        "ip": "192.168.88.xx",
-        "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "url": "http://live.xmcdn.com/live/1005/64.m3u8"
-    }
-]
+"accessories": [{
+    "accessory": "MiGatewayFM",
+    "name": "MiGatewayFM",
+    "ip": "192.168.88.xx",
+    "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "url": "http://live.xmcdn.com/live/1005/64.m3u8"
+}]
 ```
 ## Get token
 Open command prompt or terminal. Run following command:   
