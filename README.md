@@ -55,6 +55,8 @@ Support: Unknown
 ```
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx is token.
 ## Version Logs
+### 0.2.2
+1.optimized code.   
 ### 0.2.1
 1.optimized code.   
 ### 0.2.0

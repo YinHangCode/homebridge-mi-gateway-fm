@@ -80,26 +80,51 @@ MiGatewayFM.prototype = {
     getFMStatus: function(callback) {
         var that = this;
         this.device.call("get_prop_fm", [null]).then(result => {
-            callback(null, result['current_status'] === 'pause' ? 0 : 1);
+            callback(null, result['current_status'] === 'pause' ? false : true);
         }).catch(function(err) {
             that.log.error("[MiGatewayFM][ERROR]getFMStatus Error: " + err);
-            callback(true);
+            callback(err);
         });
-
     },
 
     setFMStatus: function(value, callback) {
+		var that = this;
         if(value) {
             if(this.config['url']) {
-                this.device.call("play_specify_fm", {"type":0,"id":0,"url":this.config['url']});
+                this.device.call("play_specify_fm", {"type": 0, "id": 0, "url": this.config['url']}).then(result => {
+                    if(result[0] === "ok") {
+                        callback(null);
+                    } else {
+                        callback(result[0]);
+                    }
+                }).catch(function(err) {
+                    that.log.error("[MiGatewayFM][ERROR]setFMStatus Error: " + err);
+                    callback(err);
+                });
             } else {
-                this.device.call("play_fm", ['on']);
+                this.device.call("play_fm", ['on']).then(result => {
+                    if(result[0] === "ok") {
+                        callback(null);
+                    } else {
+                        callback(result[0]);
+                    }
+                }).catch(function(err) {
+                    that.log.error("[MiGatewayFM][ERROR]setFMStatus Error: " + err);
+                    callback(err);
+                });
             }
         } else {
-            this.device.call("play_fm", ['off']);
+            this.device.call("play_fm", ['off']).then(result => {
+                if(result[0] === "ok") {
+                    callback(null);
+                } else {
+                    callback(result[0]);
+                }
+            }).catch(function(err) {
+                that.log.error("[MiGatewayFM][ERROR]setFMStatus Error: " + err);
+                callback(err);
+            });
         }
-
-        callback(null);
     }
 
 }
