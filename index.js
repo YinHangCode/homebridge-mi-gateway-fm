@@ -95,7 +95,7 @@ MiGatewayFM.prototype = {
                     if(result[0] === "ok") {
                         callback(null);
                     } else {
-                        callback(result[0]);
+                        callback(new Error(result[0]));
                     }
                 }).catch(function(err) {
                     that.log.error("[MiGatewayFM][ERROR]setFMStatus Error: " + err);
@@ -106,7 +106,7 @@ MiGatewayFM.prototype = {
                     if(result[0] === "ok") {
                         callback(null);
                     } else {
-                        callback(result[0]);
+                        callback(new Error(result[0]));
                     }
                 }).catch(function(err) {
                     that.log.error("[MiGatewayFM][ERROR]setFMStatus Error: " + err);
@@ -118,7 +118,7 @@ MiGatewayFM.prototype = {
                 if(result[0] === "ok") {
                     callback(null);
                 } else {
-                    callback(result[0]);
+                    callback(new Error(result[0]));
                 }
             }).catch(function(err) {
                 that.log.error("[MiGatewayFM][ERROR]setFMStatus Error: " + err);
