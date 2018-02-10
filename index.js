@@ -126,6 +126,5 @@ MiGatewayFM.prototype = {
             });
         }
     }
-
 }
 
