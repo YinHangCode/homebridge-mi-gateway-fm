@@ -70,26 +70,28 @@ Wait until you get output.
 For more information about token, please refer to [OpenMiHome](https://github.com/OpenMiHome/mihome-binary-protocol) and [miio](https://github.com/aholstenson/miio).   
 
 ## Version Logs
-### 0.2.5
+### 0.2.6 (2018-02-10)
+1.update 'README.md'.   
+### 0.2.5 (2018-02-10)
 1.optimized code.   
-### 0.2.4
+### 0.2.4 (2018-02-10)
 1.update 'package.json'.   
-### 0.2.3
+### 0.2.3 (2017-09-11)
 1.optimized code.   
-### 0.2.2
+### 0.2.2 (2017-09-05)
 1.optimized code.   
-### 0.2.1
+### 0.2.1 (2017-08-27)
 1.optimized code.   
-### 0.2.0
+### 0.2.0 (2017-08-26)
 1.fixed bug that homebridge not works when device is not responding.   
 2.add support for aqara ac partner FM.   
-### 0.1.1
+### 0.1.1 (2017-08-26)
 1.optimized code.   
-### 0.1.0
+### 0.1.0 (2017-08-24)
 1.add support for mi ac partner FM.   
-### 0.0.3
+### 0.0.3 (2017-08-22)
 1.optimized code.   
-### 0.0.2
+### 0.0.2 (2017-08-22)
 1.optimized code.   
-### 0.0.1
+### 0.0.1 (2017-08-20)
 1.Switch on/off XiaoMi Gateway FM.   
